@@ -7,11 +7,29 @@
   <title>Formulário de Login</title>
 </head>
 <body>
-  <form action="./index.html" method="post">
-    <h1>Cadastro</h1>
-    ..... Conteúdo do HTML
-    <button type="button" onclick="location.href='index.html'">Voltar</button>
-    <button type="submit">Cadastrar</button>
+  <form action="./home.html" method="post">
+    <h1>Login</h1>
+    <p>
+      <label for="nome_login">Usuário: </label>
+      <input id="nome_login" name="nome_login" type="text"/>
+    </p>
+    <p>
+      <label for="senha_login">Senha: </label>
+      <input id="senha_login" name="senha_login" type="password"/>
+    </p>
+    <p>
+      <label>
+      <input type="checkbox" name="manterlogado" value="sim" /> Manter logado
+      </label>
+    </p>
+    <p> 
+      <button type="submit" >Login</button> 
+    </p>
+    <p> 
+      <a href="./cadastro.html">Ainda não tem conta?</a>
+    </p>
+    <p> 
+      <a href="./reset.html">Esqueceu a senha?</a>
     </p>
   </form>
 </body>
