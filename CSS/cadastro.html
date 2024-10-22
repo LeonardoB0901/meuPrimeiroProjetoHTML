@@ -7,34 +7,27 @@
   <title>Formulário de Login</title>
 </head>
 <body>
-  
-  <form action="./index.html" method="get">
+  <form action="./index.html" method="post">
     <h1>Cadastro</h1>
-    <p>  <form action="./home.html" method="get">
-      <h1>Login</h1>
-    <p>
-      <label for="nome_login">Usuário: </label>
-      <input id="nome_login" name="nome_login" type="text"/>
-      </p>
-      <p>
-      <label for="senha_login">Senha: </label>
-      <input id="senha_login" name="senha_login" type="password"/>
-      </p>
-      <p>
-      <label>
-        <input type="checkbox" name="manterlogado" value="sim" /> Manter logado
-      </label>
-      </p>
-      <p> 
-        <button type="submit" >Login</button> 
-      </p>
-      <p> 
-        <a href="./cadastro.html">Ainda não tem conta?</a>
-      </p>
-      <p> 
-      <a href="./reset.html">Esqueceu a senha?</a>
-    </p>
-    </p>
+    <label for="usuario">Nome</label><br>
+      <input name="usuario" type="text" required><br>
+      <br>
+      <label for="Email">E-mail</label><br>
+      <input name="Email"type="email" required><br>
+      <br>
+      <label for="senha">Senha</label><br>
+      <input name="senha" type="password" required minlength="6"><br>
+      <br>
+      <label for="senha">Confirmar senha</label><br>
+      <input name="senha" type="password" required minlength="6"><br>
+      <br>
+      <label for="perfilusuarios">Perfil de Usuário</label><br>
+      <select name="abacate" id="perfilusuarios" required><br>
+        <option value="professor">Professor</option>
+        <option value="administrador">Administrador</option>
+        <option value="jogador">Jogador</option>
+      </select>
+      <br>
     <button type="button" onclick="location.href='index.html'">Voltar</button>
     <button type="submit">Cadastrar</button>
     </p>
